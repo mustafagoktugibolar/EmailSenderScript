@@ -44,7 +44,7 @@ To ensure this script runs daily, you can use cron jobs on Unix-based systems or
 ```
 2. Add a new line to schedule the script to run daily at a specific time. For example, to run the script at 8 AM every day:
 ```bash
-    0 8 * * * /usr/bin/python3/Script.py
+    0 8 * * * /usr/bin/python3/path/to/your_script.py
 ```
 
 ### On Windows
