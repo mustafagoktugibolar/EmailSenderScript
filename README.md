@@ -31,7 +31,35 @@ This is a simple script that allows you to send routine emails using Python.
     python3 email_sender.py
     ```
 
-3. Follow the prompts to enter the recipient's email address, subject, and message.
+3. Set Up a Cron Job or Task Scheduler
+
+To ensure this script runs daily, you can use cron jobs on Unix-based systems or Task Scheduler on Windows.
+
+### On Unix-based Systems (Linux, macOS)
+
+1. Open the crontab file:
+
+```bash
+    crontab -e
+```
+2. Add a new line to schedule the script to run daily at a specific time. For example, to run the script at 8 AM every day:
+```bash
+    0 8 * * * /usr/bin/python3/Script.py
+```
+
+### On Windows
+
+1. Open Task Scheduler.
+2. Create a new task.
+3. Set the trigger to daily and specify the time.
+4. Set the action to start a program, and provide the path to your Python executable and your script.
+
+## Additional Notes
+* Ensure that you keep your email credentials secure. For production use, consider using environment variables or a more secure method for storing credentials.
+* You can customize the email body, add attachments, and handle errors more gracefully as needed.
+
+This script will now send an email every day at the specified time. You can expand and customize it according to your specific needs, such as generating reports dynamically and attaching files.
+
 
 ## Contributing
 
