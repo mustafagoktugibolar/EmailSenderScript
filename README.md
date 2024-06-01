@@ -12,7 +12,7 @@ This is a simple script that allows you to send routine emails using Python.
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/mustafagoktugibolar/email-sender-script.git
+    git clone https://github.com/mustafagoktugibolar/EmailSenderScript.git
     ```
 
 2. Install the required dependencies:
